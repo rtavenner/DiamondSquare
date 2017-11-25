@@ -27,7 +27,7 @@ mesh = WebGL.indexedTriangles
                         vec3 
                             (toFloat x / toFloat size - 0.5)
                             (toFloat y / toFloat size - 0.5)
-                            (h / 7)
+                            (max h -1.01 / 7)
                     , color =
                         if h < -1
                         then vec3 0 0 (clamp 0 0.5 (0.5*h + 1))
